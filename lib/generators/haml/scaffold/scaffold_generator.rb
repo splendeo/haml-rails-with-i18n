@@ -20,6 +20,10 @@ module Haml
           template "_form.html.haml", File.join("app/views", controller_file_path, filename)
         end
       end
+      
+      def show_locale_warning
+        puts 'Remember: you must run rails g haml:locale at least once in order to avoid translation errors'
+      end
 
     protected
 
