@@ -1,8 +1,8 @@
-require 'rails/generators/named_base'
+require 'rails/generators/base'
 
 module Haml
   module Generators
-    class Locale < Rails::Generators::NamedBase
+    class Locale < Rails::Generators::Base
       source_root File.expand_path("../templates", __FILE__)
 
       def generate_locale
