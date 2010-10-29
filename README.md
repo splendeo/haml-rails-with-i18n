@@ -12,8 +12,11 @@ Then on your config/application.rb:
       g.template_engine :haml
     end
 
-You will have to execute rails g haml:locale at least once in order to get the locale translations in English.
+Finally, install the gems from the console:
 
+    bundle install
+
+You will have to execute rails g haml:locale at least once in order to get the locale translations in English.
 
 Once you've done that, any time you generate a controller or scaffold, you'll get Haml instead of ERB templates. On top of that, when your Rails application loads, Haml will be loaded and initialized completely automatically! The modern world is just so amazing.
 
