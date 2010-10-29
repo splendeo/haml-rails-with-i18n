@@ -1,16 +1,19 @@
-# Haml-rails
+# Haml-rails-with-i18n
 
 Haml-rails provides Haml generators for Rails 3. It also enables Haml as the templating engine for you, so you don't have to screw around in your own application.rb when your Gemfile already clearly indicated what templating engine you have installed. Hurrah.
 
 To use it, add this line to your Gemfile:
 
-    gem "haml-rails"
+    gem "haml-rails-with-i18n"
 
 Then on your config/application.rb:
 
     config.generators do |g|
       g.template_engine :haml
     end
+
+You will have to execute rails g haml:locale at least once in order to get the locale translations in English.
+
 
 Once you've done that, any time you generate a controller or scaffold, you'll get Haml instead of ERB templates. On top of that, when your Rails application loads, Haml will be loaded and initialized completely automatically! The modern world is just so amazing.
 
