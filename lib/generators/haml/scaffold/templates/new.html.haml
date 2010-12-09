@@ -1,6 +1,6 @@
 %h1= t(:new_title, :model => '<%= singular_table_name %>')
 
-%p
+.action_links
   = link_to t(:back_link), <%= index_helper %>_path
 
 = render 'form'
